@@ -1,0 +1,19 @@
+name: MasterCronTests
+
+on:
+  schedule:
+    - cron:  '0 23 * * *'
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Build project
+      run: xcodebuild build
+           
+    - name: Run tests
+      run: xcodebuild clean test -scheme "TimerWorkout" -destination 'platform=iOS Simulator,name=iPhone 8,OS=13.4.1' -resultBundlePath ResultBundle.xcresult | xcpretty
