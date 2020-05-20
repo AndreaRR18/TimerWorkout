@@ -1,0 +1,27 @@
+name: Start tests
+
+on:
+  push:
+    branches: develop
+  pull_request:
+    branches: feature/*
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Pull TimerWorkoutProject
+      run: git clone https://github.com/AndreaRR18/TimerWorkout.git
+    
+    - name: Go to folder
+      run: cd ./TeamWorkout
+    
+    - name: Build project
+      run: xcodebuild build
+           
+    - name: Run tests
+      run: xcodebuild clean test -scheme "TimerWorkout" -destination 'platform=iOS Simulator,name=iPhone 8,OS=13.4.1' -resultBundlePath ResultBundle.xcresult | xcpretty
