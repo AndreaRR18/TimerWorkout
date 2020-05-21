@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65EF80A324765BA900BE9FBD /* TabataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EF80A224765BA900BE9FBD /* TabataView.swift */; };
+		65EF80A524765E5C00BE9FBD /* SetupCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EF80A424765E5C00BE9FBD /* SetupCellView.swift */; };
 		65FA3A3C2473A97600A1C911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FA3A3B2473A97600A1C911 /* AppDelegate.swift */; };
 		65FA3A3E2473A97600A1C911 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FA3A3D2473A97600A1C911 /* SceneDelegate.swift */; };
 		65FA3A412473A97600A1C911 /* TimerWorkout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65FA3A3F2473A97600A1C911 /* TimerWorkout.xcdatamodeld */; };
-		65FA3A432473A97600A1C911 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FA3A422473A97600A1C911 /* ContentView.swift */; };
 		65FA3A452473A97E00A1C911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65FA3A442473A97E00A1C911 /* Assets.xcassets */; };
 		65FA3A482473A97E00A1C911 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65FA3A472473A97E00A1C911 /* Preview Assets.xcassets */; };
 		65FA3A4B2473A97E00A1C911 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65FA3A492473A97E00A1C911 /* LaunchScreen.storyboard */; };
@@ -36,11 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65EF80A224765BA900BE9FBD /* TabataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabataView.swift; sourceTree = "<group>"; };
+		65EF80A424765E5C00BE9FBD /* SetupCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupCellView.swift; sourceTree = "<group>"; };
 		65FA3A382473A97600A1C911 /* TimerWorkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerWorkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FA3A3B2473A97600A1C911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65FA3A3D2473A97600A1C911 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		65FA3A402473A97600A1C911 /* TimerWorkout.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimerWorkout.xcdatamodel; sourceTree = "<group>"; };
-		65FA3A422473A97600A1C911 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65FA3A442473A97E00A1C911 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65FA3A472473A97E00A1C911 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		65FA3A4A2473A97E00A1C911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +80,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65EF809F24765B8700BE9FBD /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				65EF80A024765B9400BE9FBD /* Tabata */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		65EF80A024765B9400BE9FBD /* Tabata */ = {
+			isa = PBXGroup;
+			children = (
+				65EF80A124765B9B00BE9FBD /* UI */,
+			);
+			path = Tabata;
+			sourceTree = "<group>";
+		};
+		65EF80A124765B9B00BE9FBD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				65EF80A224765BA900BE9FBD /* TabataView.swift */,
+				65EF80A424765E5C00BE9FBD /* SetupCellView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		65FA3A2F2473A97600A1C911 = {
 			isa = PBXGroup;
 			children = (
@@ -101,9 +128,9 @@
 		65FA3A3A2473A97600A1C911 /* TimerWorkout */ = {
 			isa = PBXGroup;
 			children = (
+				65EF809F24765B8700BE9FBD /* Sections */,
 				65FA3A3B2473A97600A1C911 /* AppDelegate.swift */,
 				65FA3A3D2473A97600A1C911 /* SceneDelegate.swift */,
-				65FA3A422473A97600A1C911 /* ContentView.swift */,
 				65FA3A442473A97E00A1C911 /* Assets.xcassets */,
 				65FA3A492473A97E00A1C911 /* LaunchScreen.storyboard */,
 				65FA3A4C2473A97E00A1C911 /* Info.plist */,
@@ -270,9 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65EF80A524765E5C00BE9FBD /* SetupCellView.swift in Sources */,
 				65FA3A412473A97600A1C911 /* TimerWorkout.xcdatamodeld in Sources */,
 				65FA3A3C2473A97600A1C911 /* AppDelegate.swift in Sources */,
-				65FA3A432473A97600A1C911 /* ContentView.swift in Sources */,
+				65EF80A324765BA900BE9FBD /* TabataView.swift in Sources */,
 				65FA3A3E2473A97600A1C911 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,11 +471,12 @@
 				DEVELOPMENT_TEAM = EUQ43QLTML;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TimerWorkout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = andrea.rinaldi.TimerWorkout;
+				PRODUCT_BUNDLE_IDENTIFIER = andrea.rinaldi.TimerWorkout.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -463,11 +492,12 @@
 				DEVELOPMENT_TEAM = EUQ43QLTML;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TimerWorkout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = andrea.rinaldi.TimerWorkout;
+				PRODUCT_BUNDLE_IDENTIFIER = andrea.rinaldi.TimerWorkout.prod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
